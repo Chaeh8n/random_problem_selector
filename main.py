@@ -40,7 +40,7 @@ def start_over():
 
   print(f"\nHere is your {num_questions} random questions:\n{question_list}\n")
 
-  save_to_csv_file = input("Would you like to save the questions in csv file? (y/n): ").lower()
+  save_to_csv_file = input("Would you like to save the questions in a csv file? (y/n): ").lower()
 
   if save_to_csv_file == 'y':
     with open('random_question_list.csv', mode='w', newline='') as file:
